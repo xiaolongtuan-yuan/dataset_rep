@@ -1,0 +1,10 @@
+[General]
+network = networks.Myned{}
+result-dir = ../results/{}
+sim-time-limit = 10000s
+Myned{}.routingTableString = "{}"
+Myned{}.netId = {}
+{}
+**.app.packetLength = 4096 bytes
+**.app.sendIaTime = exponential(5s)
+**.result-recording-modes = -vector

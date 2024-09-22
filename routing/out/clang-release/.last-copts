@@ -1,0 +1,1 @@
+-O3 -DNDEBUG=1 -ffp-contract=off   -MMD -MP -MF .d    -isystem /Users/zhangyuan/Desktop/omnet/omnetpp-6.0.3/tools/macos.x86_64/include -Wno-deprecated-register -Wno-unused-function -fno-omit-frame-pointer  -DWITH_QTENV -DWITH_NETBUILDER -DWITH_OSG -DOMNETPPLIBS_IMPORT -DINET_IMPORT -I../inet4.5/src -I/Users/zhangyuan/Desktop/omnet/omnetpp-6.0.3/include

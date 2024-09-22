@@ -1,0 +1,30 @@
+src: 0, dst: 3, sendPkgCount: 486
+src: 1, dst: 2, sendPkgCount: 476
+src: 1, dst: 2, avgDelay: 1820.23, avgJitter: 30.364, pkgReceiveCount: 125, sunDelay: 227529, sunJitter: 3795.51
+src: 5, dst: 2, avgDelay: 0.0840269, avgJitter: 5.38676e-05, pkgReceiveCount: 492, sunDelay: 41.3413, sunJitter: 0.0265029
+src: 8, dst: 2, avgDelay: 5.44381, avgJitter: 0.976484, pkgReceiveCount: 499, sunDelay: 2716.46, sunJitter: 487.266
+src: 2, dst: 9, sendPkgCount: 565
+src: 0, dst: 3, avgDelay: 1.6064, avgJitter: 0.0215109, pkgReceiveCount: 486, sunDelay: 780.712, sunJitter: 10.4543
+src: 3, dst: 12, sendPkgCount: 511
+src: 6, dst: 4, avgDelay: 2.10283, avgJitter: 0.0315456, pkgReceiveCount: 517, sunDelay: 1087.16, sunJitter: 16.3091
+src: 4, dst: 9, sendPkgCount: 534
+src: 7, dst: 5, avgDelay: 2006.28, avgJitter: 32.8955, pkgReceiveCount: 118, sunDelay: 236741, sunJitter: 3881.67
+src: 10, dst: 5, avgDelay: 1.66325, avgJitter: 0.0428192, pkgReceiveCount: 515, sunDelay: 856.576, sunJitter: 22.0519
+src: 12, dst: 5, avgDelay: 2034.83, avgJitter: 39.4607, pkgReceiveCount: 99, sunDelay: 201448, sunJitter: 3906.61
+src: 5, dst: 2, sendPkgCount: 492
+src: 11, dst: 6, avgDelay: 0.603974, avgJitter: 0.0243258, pkgReceiveCount: 521, sunDelay: 314.67, sunJitter: 12.6737
+src: 6, dst: 4, sendPkgCount: 517
+src: 13, dst: 7, avgDelay: 1494.12, avgJitter: 15.8214, pkgReceiveCount: 187, sunDelay: 279401, sunJitter: 2958.61
+src: 7, dst: 5, sendPkgCount: 546
+src: 8, dst: 2, sendPkgCount: 500
+src: 2, dst: 9, avgDelay: 5.65462, avgJitter: 1.35103, pkgReceiveCount: 565, sunDelay: 3194.86, sunJitter: 763.33
+src: 4, dst: 9, avgDelay: 1079.3, avgJitter: 10.0161, pkgReceiveCount: 311, sunDelay: 335661, sunJitter: 3115.01
+src: 9, dst: 10, sendPkgCount: 484
+src: 9, dst: 10, avgDelay: 1938.55, avgJitter: 40.5779, pkgReceiveCount: 95, sunDelay: 184162, sunJitter: 3854.9
+src: 10, dst: 5, sendPkgCount: 515
+src: 11, dst: 6, sendPkgCount: 521
+src: 3, dst: 12, avgDelay: 0.1628, avgJitter: 0, pkgReceiveCount: 511, sunDelay: 83.1908, sunJitter: 0
+src: 12, dst: 5, sendPkgCount: 469
+src: 14, dst: 13, avgDelay: 0.345162, avgJitter: 0.0103231, pkgReceiveCount: 519, sunDelay: 179.139, sunJitter: 5.35768
+src: 13, dst: 7, sendPkgCount: 497
+src: 14, dst: 13, sendPkgCount: 519

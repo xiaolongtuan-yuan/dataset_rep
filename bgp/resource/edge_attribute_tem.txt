@@ -1,0 +1,6 @@
+channel {} extends ThruputMeteringChannel
+        {{
+            delay = default({});
+            datarate = default({});
+            per = default({});
+        }}

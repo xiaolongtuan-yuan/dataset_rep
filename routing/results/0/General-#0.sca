@@ -1,0 +1,2003 @@
+version 3
+run General-0-20240626-11:20:05-15670
+attr configname General
+attr datetime 20240626-11:20:05
+attr datetimef 20240626-112005
+attr experiment General
+attr inifile ini_dir/omnetpp0.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network networks.Myned0
+attr processid 15670
+attr repetition 0
+attr replication #0
+attr resultdir ../results/0
+attr runnumber 0
+attr seedset 0
+config network networks.Myned0
+config result-dir ../results/0
+config sim-time-limit 10000s
+config Myned0.routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+config Myned0.netId 0
+config Myned0.rte[0].appType "\"route_reflector\""
+config Myned0.rte[0].address 0
+config Myned0.rte[0].destAddresses "\"7\""
+config Myned0.rte[1].appType "\"router\""
+config Myned0.rte[1].address 1
+config Myned0.rte[1].destAddresses "\"6\""
+config Myned0.rte[2].appType "\"route_reflector\""
+config Myned0.rte[2].address 2
+config Myned0.rte[2].destAddresses "\"7\""
+config Myned0.rte[3].appType "\"router\""
+config Myned0.rte[3].address 3
+config Myned0.rte[3].destAddresses "\"5\""
+config Myned0.rte[4].appType "\"router\""
+config Myned0.rte[4].address 4
+config Myned0.rte[4].destAddresses "\"-1\""
+config Myned0.rte[5].appType "\"network\""
+config Myned0.rte[5].address 5
+config Myned0.rte[5].destAddresses "\"-1\""
+config Myned0.rte[6].appType "\"network\""
+config Myned0.rte[6].address 6
+config Myned0.rte[6].destAddresses "\"-1\""
+config Myned0.rte[7].appType "\"network\""
+config Myned0.rte[7].address 7
+config Myned0.rte[7].destAddresses "\"-1\""
+config Myned0.rte[8].appType "\"external\""
+config Myned0.rte[8].address 8
+config Myned0.rte[8].destAddresses "\"-1\""
+config Myned0.rte[9].appType "\"external\""
+config Myned0.rte[9].address 9
+config Myned0.rte[9].destAddresses "\"-1\""
+config Myned0.rte[10].appType "\"external\""
+config Myned0.rte[10].address 10
+config Myned0.rte[10].destAddresses "\"-1\""
+config Myned0.rte[11].appType "\"external\""
+config Myned0.rte[11].address 11
+config Myned0.rte[11].destAddresses "\"-1\""
+config Myned0.rte[12].appType "\"external\""
+config Myned0.rte[12].address 12
+config Myned0.rte[12].destAddresses "\"-1\""
+config Myned0.rte[13].appType "\"external\""
+config Myned0.rte[13].address 13
+config Myned0.rte[13].destAddresses "\"-1\""
+config **.app.packetLength "4096 bytes"
+config **.app.sendIaTime exponential(5s)
+config **.result-recording-modes -vector
+
+par Myned0.rte[0].port$o[1].channel typename "\"networks.Myned0.C0\""
+par Myned0.rte[0].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[0].port$o[1].channel delay 0.02s
+attr mutable ""
+attr unit s
+par Myned0.rte[0].port$o[1].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[0].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[0].port$o[1].channel per 0.04
+attr mutable ""
+par Myned0.rte[0].port$o[1].channel displayAsTooltip false
+par Myned0.rte[0].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[3].port$o[1].channel typename "\"networks.Myned0.C0\""
+par Myned0.rte[3].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[3].port$o[1].channel delay 0.02s
+attr mutable ""
+attr unit s
+par Myned0.rte[3].port$o[1].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[3].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[3].port$o[1].channel per 0.04
+attr mutable ""
+par Myned0.rte[3].port$o[1].channel displayAsTooltip false
+par Myned0.rte[3].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[0].port$o[2].channel typename "\"networks.Myned0.C1\""
+par Myned0.rte[0].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[0].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Myned0.rte[0].port$o[2].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[0].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[0].port$o[2].channel per 0.1
+attr mutable ""
+par Myned0.rte[0].port$o[2].channel displayAsTooltip false
+par Myned0.rte[0].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[4].port$o[1].channel typename "\"networks.Myned0.C1\""
+par Myned0.rte[4].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[4].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Myned0.rte[4].port$o[1].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[4].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[4].port$o[1].channel per 0.1
+attr mutable ""
+par Myned0.rte[4].port$o[1].channel displayAsTooltip false
+par Myned0.rte[4].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[0].port$o[3].channel typename "\"networks.Myned0.C2\""
+par Myned0.rte[0].port$o[3].channel disabled false
+attr mutable ""
+par Myned0.rte[0].port$o[3].channel delay 0.001s
+attr mutable ""
+attr unit s
+par Myned0.rte[0].port$o[3].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[0].port$o[3].channel ber 0
+attr mutable ""
+par Myned0.rte[0].port$o[3].channel per 0.01
+attr mutable ""
+par Myned0.rte[0].port$o[3].channel displayAsTooltip false
+par Myned0.rte[0].port$o[3].channel thruputDisplayFormat "\"\""
+par Myned0.rte[2].port$o[1].channel typename "\"networks.Myned0.C2\""
+par Myned0.rte[2].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[2].port$o[1].channel delay 0.001s
+attr mutable ""
+attr unit s
+par Myned0.rte[2].port$o[1].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[2].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[2].port$o[1].channel per 0.01
+attr mutable ""
+par Myned0.rte[2].port$o[1].channel displayAsTooltip false
+par Myned0.rte[2].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[0].port$o[4].channel typename "\"networks.Myned0.C3\""
+par Myned0.rte[0].port$o[4].channel disabled false
+attr mutable ""
+par Myned0.rte[0].port$o[4].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[0].port$o[4].channel datarate 5e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[0].port$o[4].channel ber 0
+attr mutable ""
+par Myned0.rte[0].port$o[4].channel per 0.08
+attr mutable ""
+par Myned0.rte[0].port$o[4].channel displayAsTooltip false
+par Myned0.rte[0].port$o[4].channel thruputDisplayFormat "\"\""
+par Myned0.rte[1].port$o[1].channel typename "\"networks.Myned0.C3\""
+par Myned0.rte[1].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[1].port$o[1].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[1].port$o[1].channel datarate 5e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[1].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[1].port$o[1].channel per 0.08
+attr mutable ""
+par Myned0.rte[1].port$o[1].channel displayAsTooltip false
+par Myned0.rte[1].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[0].port$o[5].channel typename "\"networks.Myned0.C4\""
+par Myned0.rte[0].port$o[5].channel disabled false
+attr mutable ""
+par Myned0.rte[0].port$o[5].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[0].port$o[5].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[0].port$o[5].channel ber 0
+attr mutable ""
+par Myned0.rte[0].port$o[5].channel per 0.1
+attr mutable ""
+par Myned0.rte[0].port$o[5].channel displayAsTooltip false
+par Myned0.rte[0].port$o[5].channel thruputDisplayFormat "\"\""
+par Myned0.rte[13].port$o[1].channel typename "\"networks.Myned0.C4\""
+par Myned0.rte[13].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[13].port$o[1].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[13].port$o[1].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[13].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[13].port$o[1].channel per 0.1
+attr mutable ""
+par Myned0.rte[13].port$o[1].channel displayAsTooltip false
+par Myned0.rte[13].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[1].port$o[2].channel typename "\"networks.Myned0.C5\""
+par Myned0.rte[1].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[1].port$o[2].channel delay 0.04s
+attr mutable ""
+attr unit s
+par Myned0.rte[1].port$o[2].channel datarate 500000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[1].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[1].port$o[2].channel per 0.08
+attr mutable ""
+par Myned0.rte[1].port$o[2].channel displayAsTooltip false
+par Myned0.rte[1].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[3].port$o[2].channel typename "\"networks.Myned0.C5\""
+par Myned0.rte[3].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[3].port$o[2].channel delay 0.04s
+attr mutable ""
+attr unit s
+par Myned0.rte[3].port$o[2].channel datarate 500000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[3].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[3].port$o[2].channel per 0.08
+attr mutable ""
+par Myned0.rte[3].port$o[2].channel displayAsTooltip false
+par Myned0.rte[3].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[1].port$o[3].channel typename "\"networks.Myned0.C6\""
+par Myned0.rte[1].port$o[3].channel disabled false
+attr mutable ""
+par Myned0.rte[1].port$o[3].channel delay 0.2s
+attr mutable ""
+attr unit s
+par Myned0.rte[1].port$o[3].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[1].port$o[3].channel ber 0
+attr mutable ""
+par Myned0.rte[1].port$o[3].channel per 0.08
+attr mutable ""
+par Myned0.rte[1].port$o[3].channel displayAsTooltip false
+par Myned0.rte[1].port$o[3].channel thruputDisplayFormat "\"\""
+par Myned0.rte[2].port$o[2].channel typename "\"networks.Myned0.C6\""
+par Myned0.rte[2].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[2].port$o[2].channel delay 0.2s
+attr mutable ""
+attr unit s
+par Myned0.rte[2].port$o[2].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[2].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[2].port$o[2].channel per 0.08
+attr mutable ""
+par Myned0.rte[2].port$o[2].channel displayAsTooltip false
+par Myned0.rte[2].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[1].port$o[4].channel typename "\"networks.Myned0.C7\""
+par Myned0.rte[1].port$o[4].channel disabled false
+attr mutable ""
+par Myned0.rte[1].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Myned0.rte[1].port$o[4].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[1].port$o[4].channel ber 0
+attr mutable ""
+par Myned0.rte[1].port$o[4].channel per 0.08
+attr mutable ""
+par Myned0.rte[1].port$o[4].channel displayAsTooltip false
+par Myned0.rte[1].port$o[4].channel thruputDisplayFormat "\"\""
+par Myned0.rte[8].port$o[1].channel typename "\"networks.Myned0.C7\""
+par Myned0.rte[8].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[8].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Myned0.rte[8].port$o[1].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[8].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[8].port$o[1].channel per 0.08
+attr mutable ""
+par Myned0.rte[8].port$o[1].channel displayAsTooltip false
+par Myned0.rte[8].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[2].port$o[3].channel typename "\"networks.Myned0.C8\""
+par Myned0.rte[2].port$o[3].channel disabled false
+attr mutable ""
+par Myned0.rte[2].port$o[3].channel delay 0.04s
+attr mutable ""
+attr unit s
+par Myned0.rte[2].port$o[3].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[2].port$o[3].channel ber 0
+attr mutable ""
+par Myned0.rte[2].port$o[3].channel per 0.01
+attr mutable ""
+par Myned0.rte[2].port$o[3].channel displayAsTooltip false
+par Myned0.rte[2].port$o[3].channel thruputDisplayFormat "\"\""
+par Myned0.rte[4].port$o[2].channel typename "\"networks.Myned0.C8\""
+par Myned0.rte[4].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[4].port$o[2].channel delay 0.04s
+attr mutable ""
+attr unit s
+par Myned0.rte[4].port$o[2].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[4].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[4].port$o[2].channel per 0.01
+attr mutable ""
+par Myned0.rte[4].port$o[2].channel displayAsTooltip false
+par Myned0.rte[4].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[2].port$o[4].channel typename "\"networks.Myned0.C9\""
+par Myned0.rte[2].port$o[4].channel disabled false
+attr mutable ""
+par Myned0.rte[2].port$o[4].channel delay 0.15s
+attr mutable ""
+attr unit s
+par Myned0.rte[2].port$o[4].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[2].port$o[4].channel ber 0
+attr mutable ""
+par Myned0.rte[2].port$o[4].channel per 0.08
+attr mutable ""
+par Myned0.rte[2].port$o[4].channel displayAsTooltip false
+par Myned0.rte[2].port$o[4].channel thruputDisplayFormat "\"\""
+par Myned0.rte[10].port$o[1].channel typename "\"networks.Myned0.C9\""
+par Myned0.rte[10].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[10].port$o[1].channel delay 0.15s
+attr mutable ""
+attr unit s
+par Myned0.rte[10].port$o[1].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[10].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[10].port$o[1].channel per 0.08
+attr mutable ""
+par Myned0.rte[10].port$o[1].channel displayAsTooltip false
+par Myned0.rte[10].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[3].port$o[3].channel typename "\"networks.Myned0.C10\""
+par Myned0.rte[3].port$o[3].channel disabled false
+attr mutable ""
+par Myned0.rte[3].port$o[3].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[3].port$o[3].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[3].port$o[3].channel ber 0
+attr mutable ""
+par Myned0.rte[3].port$o[3].channel per 0.04
+attr mutable ""
+par Myned0.rte[3].port$o[3].channel displayAsTooltip false
+par Myned0.rte[3].port$o[3].channel thruputDisplayFormat "\"\""
+par Myned0.rte[4].port$o[3].channel typename "\"networks.Myned0.C10\""
+par Myned0.rte[4].port$o[3].channel disabled false
+attr mutable ""
+par Myned0.rte[4].port$o[3].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[4].port$o[3].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[4].port$o[3].channel ber 0
+attr mutable ""
+par Myned0.rte[4].port$o[3].channel per 0.04
+attr mutable ""
+par Myned0.rte[4].port$o[3].channel displayAsTooltip false
+par Myned0.rte[4].port$o[3].channel thruputDisplayFormat "\"\""
+par Myned0.rte[3].port$o[4].channel typename "\"networks.Myned0.C11\""
+par Myned0.rte[3].port$o[4].channel disabled false
+attr mutable ""
+par Myned0.rte[3].port$o[4].channel delay 0.2s
+attr mutable ""
+attr unit s
+par Myned0.rte[3].port$o[4].channel datarate 500000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[3].port$o[4].channel ber 0
+attr mutable ""
+par Myned0.rte[3].port$o[4].channel per 0.01
+attr mutable ""
+par Myned0.rte[3].port$o[4].channel displayAsTooltip false
+par Myned0.rte[3].port$o[4].channel thruputDisplayFormat "\"\""
+par Myned0.rte[9].port$o[1].channel typename "\"networks.Myned0.C11\""
+par Myned0.rte[9].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[9].port$o[1].channel delay 0.2s
+attr mutable ""
+attr unit s
+par Myned0.rte[9].port$o[1].channel datarate 500000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[9].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[9].port$o[1].channel per 0.01
+attr mutable ""
+par Myned0.rte[9].port$o[1].channel displayAsTooltip false
+par Myned0.rte[9].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[4].port$o[4].channel typename "\"networks.Myned0.C12\""
+par Myned0.rte[4].port$o[4].channel disabled false
+attr mutable ""
+par Myned0.rte[4].port$o[4].channel delay 0.02s
+attr mutable ""
+attr unit s
+par Myned0.rte[4].port$o[4].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[4].port$o[4].channel ber 0
+attr mutable ""
+par Myned0.rte[4].port$o[4].channel per 0.08
+attr mutable ""
+par Myned0.rte[4].port$o[4].channel displayAsTooltip false
+par Myned0.rte[4].port$o[4].channel thruputDisplayFormat "\"\""
+par Myned0.rte[11].port$o[1].channel typename "\"networks.Myned0.C12\""
+par Myned0.rte[11].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[11].port$o[1].channel delay 0.02s
+attr mutable ""
+attr unit s
+par Myned0.rte[11].port$o[1].channel datarate 20000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[11].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[11].port$o[1].channel per 0.08
+attr mutable ""
+par Myned0.rte[11].port$o[1].channel displayAsTooltip false
+par Myned0.rte[11].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[4].port$o[5].channel typename "\"networks.Myned0.C13\""
+par Myned0.rte[4].port$o[5].channel disabled false
+attr mutable ""
+par Myned0.rte[4].port$o[5].channel delay 0.15s
+attr mutable ""
+attr unit s
+par Myned0.rte[4].port$o[5].channel datarate 4e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[4].port$o[5].channel ber 0
+attr mutable ""
+par Myned0.rte[4].port$o[5].channel per 0.08
+attr mutable ""
+par Myned0.rte[4].port$o[5].channel displayAsTooltip false
+par Myned0.rte[4].port$o[5].channel thruputDisplayFormat "\"\""
+par Myned0.rte[12].port$o[1].channel typename "\"networks.Myned0.C13\""
+par Myned0.rte[12].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[12].port$o[1].channel delay 0.15s
+attr mutable ""
+attr unit s
+par Myned0.rte[12].port$o[1].channel datarate 4e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[12].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[12].port$o[1].channel per 0.08
+attr mutable ""
+par Myned0.rte[12].port$o[1].channel displayAsTooltip false
+par Myned0.rte[12].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[5].port$o[1].channel typename "\"networks.Myned0.C14\""
+par Myned0.rte[5].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[5].port$o[1].channel delay 1s
+attr mutable ""
+attr unit s
+par Myned0.rte[5].port$o[1].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[5].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[5].port$o[1].channel per 0.004
+attr mutable ""
+par Myned0.rte[5].port$o[1].channel displayAsTooltip false
+par Myned0.rte[5].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[8].port$o[2].channel typename "\"networks.Myned0.C14\""
+par Myned0.rte[8].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[8].port$o[2].channel delay 1s
+attr mutable ""
+attr unit s
+par Myned0.rte[8].port$o[2].channel datarate 2.5e+07bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[8].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[8].port$o[2].channel per 0.004
+attr mutable ""
+par Myned0.rte[8].port$o[2].channel displayAsTooltip false
+par Myned0.rte[8].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[5].port$o[2].channel typename "\"networks.Myned0.C15\""
+par Myned0.rte[5].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[5].port$o[2].channel delay 0.15s
+attr mutable ""
+attr unit s
+par Myned0.rte[5].port$o[2].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[5].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[5].port$o[2].channel per 0.04
+attr mutable ""
+par Myned0.rte[5].port$o[2].channel displayAsTooltip false
+par Myned0.rte[5].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[9].port$o[2].channel typename "\"networks.Myned0.C15\""
+par Myned0.rte[9].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[9].port$o[2].channel delay 0.15s
+attr mutable ""
+attr unit s
+par Myned0.rte[9].port$o[2].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[9].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[9].port$o[2].channel per 0.04
+attr mutable ""
+par Myned0.rte[9].port$o[2].channel displayAsTooltip false
+par Myned0.rte[9].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[6].port$o[1].channel typename "\"networks.Myned0.C16\""
+par Myned0.rte[6].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[6].port$o[1].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[6].port$o[1].channel datarate 4e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[6].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[6].port$o[1].channel per 0.08
+attr mutable ""
+par Myned0.rte[6].port$o[1].channel displayAsTooltip false
+par Myned0.rte[6].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[10].port$o[2].channel typename "\"networks.Myned0.C16\""
+par Myned0.rte[10].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[10].port$o[2].channel delay 0.08s
+attr mutable ""
+attr unit s
+par Myned0.rte[10].port$o[2].channel datarate 4e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[10].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[10].port$o[2].channel per 0.08
+attr mutable ""
+par Myned0.rte[10].port$o[2].channel displayAsTooltip false
+par Myned0.rte[10].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[6].port$o[2].channel typename "\"networks.Myned0.C17\""
+par Myned0.rte[6].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[6].port$o[2].channel delay 0.2s
+attr mutable ""
+attr unit s
+par Myned0.rte[6].port$o[2].channel datarate 4e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[6].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[6].port$o[2].channel per 0.004
+attr mutable ""
+par Myned0.rte[6].port$o[2].channel displayAsTooltip false
+par Myned0.rte[6].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[11].port$o[2].channel typename "\"networks.Myned0.C17\""
+par Myned0.rte[11].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[11].port$o[2].channel delay 0.2s
+attr mutable ""
+attr unit s
+par Myned0.rte[11].port$o[2].channel datarate 4e+08bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[11].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[11].port$o[2].channel per 0.004
+attr mutable ""
+par Myned0.rte[11].port$o[2].channel displayAsTooltip false
+par Myned0.rte[11].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[7].port$o[1].channel typename "\"networks.Myned0.C18\""
+par Myned0.rte[7].port$o[1].channel disabled false
+attr mutable ""
+par Myned0.rte[7].port$o[1].channel delay 1s
+attr mutable ""
+attr unit s
+par Myned0.rte[7].port$o[1].channel datarate 5e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[7].port$o[1].channel ber 0
+attr mutable ""
+par Myned0.rte[7].port$o[1].channel per 0.001
+attr mutable ""
+par Myned0.rte[7].port$o[1].channel displayAsTooltip false
+par Myned0.rte[7].port$o[1].channel thruputDisplayFormat "\"\""
+par Myned0.rte[12].port$o[2].channel typename "\"networks.Myned0.C18\""
+par Myned0.rte[12].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[12].port$o[2].channel delay 1s
+attr mutable ""
+attr unit s
+par Myned0.rte[12].port$o[2].channel datarate 5e+06bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[12].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[12].port$o[2].channel per 0.001
+attr mutable ""
+par Myned0.rte[12].port$o[2].channel displayAsTooltip false
+par Myned0.rte[12].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[7].port$o[2].channel typename "\"networks.Myned0.C19\""
+par Myned0.rte[7].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[7].port$o[2].channel delay 0.02s
+attr mutable ""
+attr unit s
+par Myned0.rte[7].port$o[2].channel datarate 100000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[7].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[7].port$o[2].channel per 0.001
+attr mutable ""
+par Myned0.rte[7].port$o[2].channel displayAsTooltip false
+par Myned0.rte[7].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[13].port$o[2].channel typename "\"networks.Myned0.C19\""
+par Myned0.rte[13].port$o[2].channel disabled false
+attr mutable ""
+par Myned0.rte[13].port$o[2].channel delay 0.02s
+attr mutable ""
+attr unit s
+par Myned0.rte[13].port$o[2].channel datarate 100000bps
+attr mutable ""
+attr unit bps
+par Myned0.rte[13].port$o[2].channel ber 0
+attr mutable ""
+par Myned0.rte[13].port$o[2].channel per 0.001
+attr mutable ""
+par Myned0.rte[13].port$o[2].channel displayAsTooltip false
+par Myned0.rte[13].port$o[2].channel thruputDisplayFormat "\"\""
+par Myned0.rte[0].app typename "\"node.App\""
+par Myned0.rte[0].app address 0
+par Myned0.rte[0].app destAddresses "\"7\""
+par Myned0.rte[0].app appType "\"route_reflector\""
+par Myned0.rte[0].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[0].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[0].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[0].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[0].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[0].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[0].routing typename "\"node.Routing\""
+par Myned0.rte[0].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[0] frameCapacity 0
+par Myned0.rte[0].queue[0] useCutThroughSwitching false
+par Myned0.rte[0].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[1] frameCapacity 0
+par Myned0.rte[0].queue[1] useCutThroughSwitching false
+par Myned0.rte[0].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[2] frameCapacity 0
+par Myned0.rte[0].queue[2] useCutThroughSwitching false
+par Myned0.rte[0].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[3] frameCapacity 0
+par Myned0.rte[0].queue[3] useCutThroughSwitching false
+par Myned0.rte[0].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[4] frameCapacity 0
+par Myned0.rte[0].queue[4] useCutThroughSwitching false
+par Myned0.rte[0].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[5] frameCapacity 0
+par Myned0.rte[0].queue[5] useCutThroughSwitching false
+par Myned0.rte[0].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[6] frameCapacity 0
+par Myned0.rte[0].queue[6] useCutThroughSwitching false
+par Myned0.rte[0].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[7] frameCapacity 0
+par Myned0.rte[0].queue[7] useCutThroughSwitching false
+par Myned0.rte[0].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[8] frameCapacity 0
+par Myned0.rte[0].queue[8] useCutThroughSwitching false
+par Myned0.rte[0].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[9] frameCapacity 0
+par Myned0.rte[0].queue[9] useCutThroughSwitching false
+par Myned0.rte[0].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[10] frameCapacity 0
+par Myned0.rte[0].queue[10] useCutThroughSwitching false
+par Myned0.rte[0].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[11] frameCapacity 0
+par Myned0.rte[0].queue[11] useCutThroughSwitching false
+par Myned0.rte[0].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[12] frameCapacity 0
+par Myned0.rte[0].queue[12] useCutThroughSwitching false
+par Myned0.rte[0].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[13] frameCapacity 0
+par Myned0.rte[0].queue[13] useCutThroughSwitching false
+par Myned0.rte[0].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[14] frameCapacity 0
+par Myned0.rte[0].queue[14] useCutThroughSwitching false
+par Myned0.rte[0].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[15] frameCapacity 0
+par Myned0.rte[0].queue[15] useCutThroughSwitching false
+par Myned0.rte[0].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[16] frameCapacity 0
+par Myned0.rte[0].queue[16] useCutThroughSwitching false
+par Myned0.rte[0].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[17] frameCapacity 0
+par Myned0.rte[0].queue[17] useCutThroughSwitching false
+par Myned0.rte[0].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[18] frameCapacity 0
+par Myned0.rte[0].queue[18] useCutThroughSwitching false
+par Myned0.rte[0].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[0].queue[19] frameCapacity 0
+par Myned0.rte[0].queue[19] useCutThroughSwitching false
+par Myned0.rte[0] typename "\"node.Node\""
+par Myned0.rte[0] address 0
+par Myned0.rte[0] netId 0
+par Myned0.rte[0] appType "\"route_reflector\""
+par Myned0.rte[0] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[0] destAddresses "\"7\""
+par Myned0.rte[1].app typename "\"node.App\""
+par Myned0.rte[1].app address 1
+par Myned0.rte[1].app destAddresses "\"6\""
+par Myned0.rte[1].app appType "\"router\""
+par Myned0.rte[1].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[1].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[1].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[1].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[1].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[1].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[1].routing typename "\"node.Routing\""
+par Myned0.rte[1].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[0] frameCapacity 0
+par Myned0.rte[1].queue[0] useCutThroughSwitching false
+par Myned0.rte[1].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[1] frameCapacity 0
+par Myned0.rte[1].queue[1] useCutThroughSwitching false
+par Myned0.rte[1].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[2] frameCapacity 0
+par Myned0.rte[1].queue[2] useCutThroughSwitching false
+par Myned0.rte[1].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[3] frameCapacity 0
+par Myned0.rte[1].queue[3] useCutThroughSwitching false
+par Myned0.rte[1].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[4] frameCapacity 0
+par Myned0.rte[1].queue[4] useCutThroughSwitching false
+par Myned0.rte[1].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[5] frameCapacity 0
+par Myned0.rte[1].queue[5] useCutThroughSwitching false
+par Myned0.rte[1].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[6] frameCapacity 0
+par Myned0.rte[1].queue[6] useCutThroughSwitching false
+par Myned0.rte[1].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[7] frameCapacity 0
+par Myned0.rte[1].queue[7] useCutThroughSwitching false
+par Myned0.rte[1].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[8] frameCapacity 0
+par Myned0.rte[1].queue[8] useCutThroughSwitching false
+par Myned0.rte[1].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[9] frameCapacity 0
+par Myned0.rte[1].queue[9] useCutThroughSwitching false
+par Myned0.rte[1].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[10] frameCapacity 0
+par Myned0.rte[1].queue[10] useCutThroughSwitching false
+par Myned0.rte[1].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[11] frameCapacity 0
+par Myned0.rte[1].queue[11] useCutThroughSwitching false
+par Myned0.rte[1].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[12] frameCapacity 0
+par Myned0.rte[1].queue[12] useCutThroughSwitching false
+par Myned0.rte[1].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[13] frameCapacity 0
+par Myned0.rte[1].queue[13] useCutThroughSwitching false
+par Myned0.rte[1].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[14] frameCapacity 0
+par Myned0.rte[1].queue[14] useCutThroughSwitching false
+par Myned0.rte[1].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[15] frameCapacity 0
+par Myned0.rte[1].queue[15] useCutThroughSwitching false
+par Myned0.rte[1].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[16] frameCapacity 0
+par Myned0.rte[1].queue[16] useCutThroughSwitching false
+par Myned0.rte[1].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[17] frameCapacity 0
+par Myned0.rte[1].queue[17] useCutThroughSwitching false
+par Myned0.rte[1].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[18] frameCapacity 0
+par Myned0.rte[1].queue[18] useCutThroughSwitching false
+par Myned0.rte[1].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[1].queue[19] frameCapacity 0
+par Myned0.rte[1].queue[19] useCutThroughSwitching false
+par Myned0.rte[1] typename "\"node.Node\""
+par Myned0.rte[1] address 1
+par Myned0.rte[1] netId 0
+par Myned0.rte[1] appType "\"router\""
+par Myned0.rte[1] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[1] destAddresses "\"6\""
+par Myned0.rte[2].app typename "\"node.App\""
+par Myned0.rte[2].app address 2
+par Myned0.rte[2].app destAddresses "\"7\""
+par Myned0.rte[2].app appType "\"route_reflector\""
+par Myned0.rte[2].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[2].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[2].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[2].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[2].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[2].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[2].routing typename "\"node.Routing\""
+par Myned0.rte[2].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[0] frameCapacity 0
+par Myned0.rte[2].queue[0] useCutThroughSwitching false
+par Myned0.rte[2].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[1] frameCapacity 0
+par Myned0.rte[2].queue[1] useCutThroughSwitching false
+par Myned0.rte[2].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[2] frameCapacity 0
+par Myned0.rte[2].queue[2] useCutThroughSwitching false
+par Myned0.rte[2].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[3] frameCapacity 0
+par Myned0.rte[2].queue[3] useCutThroughSwitching false
+par Myned0.rte[2].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[4] frameCapacity 0
+par Myned0.rte[2].queue[4] useCutThroughSwitching false
+par Myned0.rte[2].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[5] frameCapacity 0
+par Myned0.rte[2].queue[5] useCutThroughSwitching false
+par Myned0.rte[2].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[6] frameCapacity 0
+par Myned0.rte[2].queue[6] useCutThroughSwitching false
+par Myned0.rte[2].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[7] frameCapacity 0
+par Myned0.rte[2].queue[7] useCutThroughSwitching false
+par Myned0.rte[2].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[8] frameCapacity 0
+par Myned0.rte[2].queue[8] useCutThroughSwitching false
+par Myned0.rte[2].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[9] frameCapacity 0
+par Myned0.rte[2].queue[9] useCutThroughSwitching false
+par Myned0.rte[2].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[10] frameCapacity 0
+par Myned0.rte[2].queue[10] useCutThroughSwitching false
+par Myned0.rte[2].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[11] frameCapacity 0
+par Myned0.rte[2].queue[11] useCutThroughSwitching false
+par Myned0.rte[2].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[12] frameCapacity 0
+par Myned0.rte[2].queue[12] useCutThroughSwitching false
+par Myned0.rte[2].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[13] frameCapacity 0
+par Myned0.rte[2].queue[13] useCutThroughSwitching false
+par Myned0.rte[2].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[14] frameCapacity 0
+par Myned0.rte[2].queue[14] useCutThroughSwitching false
+par Myned0.rte[2].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[15] frameCapacity 0
+par Myned0.rte[2].queue[15] useCutThroughSwitching false
+par Myned0.rte[2].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[16] frameCapacity 0
+par Myned0.rte[2].queue[16] useCutThroughSwitching false
+par Myned0.rte[2].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[17] frameCapacity 0
+par Myned0.rte[2].queue[17] useCutThroughSwitching false
+par Myned0.rte[2].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[18] frameCapacity 0
+par Myned0.rte[2].queue[18] useCutThroughSwitching false
+par Myned0.rte[2].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[2].queue[19] frameCapacity 0
+par Myned0.rte[2].queue[19] useCutThroughSwitching false
+par Myned0.rte[2] typename "\"node.Node\""
+par Myned0.rte[2] address 2
+par Myned0.rte[2] netId 0
+par Myned0.rte[2] appType "\"route_reflector\""
+par Myned0.rte[2] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[2] destAddresses "\"7\""
+par Myned0.rte[3].app typename "\"node.App\""
+par Myned0.rte[3].app address 3
+par Myned0.rte[3].app destAddresses "\"5\""
+par Myned0.rte[3].app appType "\"router\""
+par Myned0.rte[3].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[3].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[3].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[3].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[3].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[3].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[3].routing typename "\"node.Routing\""
+par Myned0.rte[3].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[0] frameCapacity 0
+par Myned0.rte[3].queue[0] useCutThroughSwitching false
+par Myned0.rte[3].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[1] frameCapacity 0
+par Myned0.rte[3].queue[1] useCutThroughSwitching false
+par Myned0.rte[3].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[2] frameCapacity 0
+par Myned0.rte[3].queue[2] useCutThroughSwitching false
+par Myned0.rte[3].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[3] frameCapacity 0
+par Myned0.rte[3].queue[3] useCutThroughSwitching false
+par Myned0.rte[3].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[4] frameCapacity 0
+par Myned0.rte[3].queue[4] useCutThroughSwitching false
+par Myned0.rte[3].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[5] frameCapacity 0
+par Myned0.rte[3].queue[5] useCutThroughSwitching false
+par Myned0.rte[3].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[6] frameCapacity 0
+par Myned0.rte[3].queue[6] useCutThroughSwitching false
+par Myned0.rte[3].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[7] frameCapacity 0
+par Myned0.rte[3].queue[7] useCutThroughSwitching false
+par Myned0.rte[3].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[8] frameCapacity 0
+par Myned0.rte[3].queue[8] useCutThroughSwitching false
+par Myned0.rte[3].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[9] frameCapacity 0
+par Myned0.rte[3].queue[9] useCutThroughSwitching false
+par Myned0.rte[3].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[10] frameCapacity 0
+par Myned0.rte[3].queue[10] useCutThroughSwitching false
+par Myned0.rte[3].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[11] frameCapacity 0
+par Myned0.rte[3].queue[11] useCutThroughSwitching false
+par Myned0.rte[3].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[12] frameCapacity 0
+par Myned0.rte[3].queue[12] useCutThroughSwitching false
+par Myned0.rte[3].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[13] frameCapacity 0
+par Myned0.rte[3].queue[13] useCutThroughSwitching false
+par Myned0.rte[3].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[14] frameCapacity 0
+par Myned0.rte[3].queue[14] useCutThroughSwitching false
+par Myned0.rte[3].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[15] frameCapacity 0
+par Myned0.rte[3].queue[15] useCutThroughSwitching false
+par Myned0.rte[3].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[16] frameCapacity 0
+par Myned0.rte[3].queue[16] useCutThroughSwitching false
+par Myned0.rte[3].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[17] frameCapacity 0
+par Myned0.rte[3].queue[17] useCutThroughSwitching false
+par Myned0.rte[3].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[18] frameCapacity 0
+par Myned0.rte[3].queue[18] useCutThroughSwitching false
+par Myned0.rte[3].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[3].queue[19] frameCapacity 0
+par Myned0.rte[3].queue[19] useCutThroughSwitching false
+par Myned0.rte[3] typename "\"node.Node\""
+par Myned0.rte[3] address 3
+par Myned0.rte[3] netId 0
+par Myned0.rte[3] appType "\"router\""
+par Myned0.rte[3] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[3] destAddresses "\"5\""
+par Myned0.rte[4].app typename "\"node.App\""
+par Myned0.rte[4].app address 4
+par Myned0.rte[4].app destAddresses "\"-1\""
+par Myned0.rte[4].app appType "\"router\""
+par Myned0.rte[4].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[4].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[4].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[4].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[4].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[4].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[4].routing typename "\"node.Routing\""
+par Myned0.rte[4].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[0] frameCapacity 0
+par Myned0.rte[4].queue[0] useCutThroughSwitching false
+par Myned0.rte[4].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[1] frameCapacity 0
+par Myned0.rte[4].queue[1] useCutThroughSwitching false
+par Myned0.rte[4].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[2] frameCapacity 0
+par Myned0.rte[4].queue[2] useCutThroughSwitching false
+par Myned0.rte[4].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[3] frameCapacity 0
+par Myned0.rte[4].queue[3] useCutThroughSwitching false
+par Myned0.rte[4].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[4] frameCapacity 0
+par Myned0.rte[4].queue[4] useCutThroughSwitching false
+par Myned0.rte[4].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[5] frameCapacity 0
+par Myned0.rte[4].queue[5] useCutThroughSwitching false
+par Myned0.rte[4].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[6] frameCapacity 0
+par Myned0.rte[4].queue[6] useCutThroughSwitching false
+par Myned0.rte[4].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[7] frameCapacity 0
+par Myned0.rte[4].queue[7] useCutThroughSwitching false
+par Myned0.rte[4].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[8] frameCapacity 0
+par Myned0.rte[4].queue[8] useCutThroughSwitching false
+par Myned0.rte[4].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[9] frameCapacity 0
+par Myned0.rte[4].queue[9] useCutThroughSwitching false
+par Myned0.rte[4].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[10] frameCapacity 0
+par Myned0.rte[4].queue[10] useCutThroughSwitching false
+par Myned0.rte[4].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[11] frameCapacity 0
+par Myned0.rte[4].queue[11] useCutThroughSwitching false
+par Myned0.rte[4].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[12] frameCapacity 0
+par Myned0.rte[4].queue[12] useCutThroughSwitching false
+par Myned0.rte[4].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[13] frameCapacity 0
+par Myned0.rte[4].queue[13] useCutThroughSwitching false
+par Myned0.rte[4].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[14] frameCapacity 0
+par Myned0.rte[4].queue[14] useCutThroughSwitching false
+par Myned0.rte[4].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[15] frameCapacity 0
+par Myned0.rte[4].queue[15] useCutThroughSwitching false
+par Myned0.rte[4].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[16] frameCapacity 0
+par Myned0.rte[4].queue[16] useCutThroughSwitching false
+par Myned0.rte[4].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[17] frameCapacity 0
+par Myned0.rte[4].queue[17] useCutThroughSwitching false
+par Myned0.rte[4].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[18] frameCapacity 0
+par Myned0.rte[4].queue[18] useCutThroughSwitching false
+par Myned0.rte[4].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[4].queue[19] frameCapacity 0
+par Myned0.rte[4].queue[19] useCutThroughSwitching false
+par Myned0.rte[4] typename "\"node.Node\""
+par Myned0.rte[4] address 4
+par Myned0.rte[4] netId 0
+par Myned0.rte[4] appType "\"router\""
+par Myned0.rte[4] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[4] destAddresses "\"-1\""
+par Myned0.rte[5].app typename "\"node.App\""
+par Myned0.rte[5].app address 5
+par Myned0.rte[5].app destAddresses "\"-1\""
+par Myned0.rte[5].app appType "\"network\""
+par Myned0.rte[5].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[5].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[5].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[5].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[5].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[5].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[5].routing typename "\"node.Routing\""
+par Myned0.rte[5].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[0] frameCapacity 0
+par Myned0.rte[5].queue[0] useCutThroughSwitching false
+par Myned0.rte[5].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[1] frameCapacity 0
+par Myned0.rte[5].queue[1] useCutThroughSwitching false
+par Myned0.rte[5].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[2] frameCapacity 0
+par Myned0.rte[5].queue[2] useCutThroughSwitching false
+par Myned0.rte[5].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[3] frameCapacity 0
+par Myned0.rte[5].queue[3] useCutThroughSwitching false
+par Myned0.rte[5].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[4] frameCapacity 0
+par Myned0.rte[5].queue[4] useCutThroughSwitching false
+par Myned0.rte[5].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[5] frameCapacity 0
+par Myned0.rte[5].queue[5] useCutThroughSwitching false
+par Myned0.rte[5].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[6] frameCapacity 0
+par Myned0.rte[5].queue[6] useCutThroughSwitching false
+par Myned0.rte[5].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[7] frameCapacity 0
+par Myned0.rte[5].queue[7] useCutThroughSwitching false
+par Myned0.rte[5].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[8] frameCapacity 0
+par Myned0.rte[5].queue[8] useCutThroughSwitching false
+par Myned0.rte[5].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[9] frameCapacity 0
+par Myned0.rte[5].queue[9] useCutThroughSwitching false
+par Myned0.rte[5].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[10] frameCapacity 0
+par Myned0.rte[5].queue[10] useCutThroughSwitching false
+par Myned0.rte[5].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[11] frameCapacity 0
+par Myned0.rte[5].queue[11] useCutThroughSwitching false
+par Myned0.rte[5].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[12] frameCapacity 0
+par Myned0.rte[5].queue[12] useCutThroughSwitching false
+par Myned0.rte[5].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[13] frameCapacity 0
+par Myned0.rte[5].queue[13] useCutThroughSwitching false
+par Myned0.rte[5].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[14] frameCapacity 0
+par Myned0.rte[5].queue[14] useCutThroughSwitching false
+par Myned0.rte[5].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[15] frameCapacity 0
+par Myned0.rte[5].queue[15] useCutThroughSwitching false
+par Myned0.rte[5].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[16] frameCapacity 0
+par Myned0.rte[5].queue[16] useCutThroughSwitching false
+par Myned0.rte[5].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[17] frameCapacity 0
+par Myned0.rte[5].queue[17] useCutThroughSwitching false
+par Myned0.rte[5].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[18] frameCapacity 0
+par Myned0.rte[5].queue[18] useCutThroughSwitching false
+par Myned0.rte[5].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[5].queue[19] frameCapacity 0
+par Myned0.rte[5].queue[19] useCutThroughSwitching false
+par Myned0.rte[5] typename "\"node.Node\""
+par Myned0.rte[5] address 5
+par Myned0.rte[5] netId 0
+par Myned0.rte[5] appType "\"network\""
+par Myned0.rte[5] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[5] destAddresses "\"-1\""
+par Myned0.rte[6].app typename "\"node.App\""
+par Myned0.rte[6].app address 6
+par Myned0.rte[6].app destAddresses "\"-1\""
+par Myned0.rte[6].app appType "\"network\""
+par Myned0.rte[6].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[6].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[6].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[6].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[6].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[6].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[6].routing typename "\"node.Routing\""
+par Myned0.rte[6].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[0] frameCapacity 0
+par Myned0.rte[6].queue[0] useCutThroughSwitching false
+par Myned0.rte[6].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[1] frameCapacity 0
+par Myned0.rte[6].queue[1] useCutThroughSwitching false
+par Myned0.rte[6].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[2] frameCapacity 0
+par Myned0.rte[6].queue[2] useCutThroughSwitching false
+par Myned0.rte[6].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[3] frameCapacity 0
+par Myned0.rte[6].queue[3] useCutThroughSwitching false
+par Myned0.rte[6].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[4] frameCapacity 0
+par Myned0.rte[6].queue[4] useCutThroughSwitching false
+par Myned0.rte[6].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[5] frameCapacity 0
+par Myned0.rte[6].queue[5] useCutThroughSwitching false
+par Myned0.rte[6].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[6] frameCapacity 0
+par Myned0.rte[6].queue[6] useCutThroughSwitching false
+par Myned0.rte[6].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[7] frameCapacity 0
+par Myned0.rte[6].queue[7] useCutThroughSwitching false
+par Myned0.rte[6].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[8] frameCapacity 0
+par Myned0.rte[6].queue[8] useCutThroughSwitching false
+par Myned0.rte[6].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[9] frameCapacity 0
+par Myned0.rte[6].queue[9] useCutThroughSwitching false
+par Myned0.rte[6].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[10] frameCapacity 0
+par Myned0.rte[6].queue[10] useCutThroughSwitching false
+par Myned0.rte[6].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[11] frameCapacity 0
+par Myned0.rte[6].queue[11] useCutThroughSwitching false
+par Myned0.rte[6].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[12] frameCapacity 0
+par Myned0.rte[6].queue[12] useCutThroughSwitching false
+par Myned0.rte[6].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[13] frameCapacity 0
+par Myned0.rte[6].queue[13] useCutThroughSwitching false
+par Myned0.rte[6].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[14] frameCapacity 0
+par Myned0.rte[6].queue[14] useCutThroughSwitching false
+par Myned0.rte[6].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[15] frameCapacity 0
+par Myned0.rte[6].queue[15] useCutThroughSwitching false
+par Myned0.rte[6].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[16] frameCapacity 0
+par Myned0.rte[6].queue[16] useCutThroughSwitching false
+par Myned0.rte[6].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[17] frameCapacity 0
+par Myned0.rte[6].queue[17] useCutThroughSwitching false
+par Myned0.rte[6].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[18] frameCapacity 0
+par Myned0.rte[6].queue[18] useCutThroughSwitching false
+par Myned0.rte[6].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[6].queue[19] frameCapacity 0
+par Myned0.rte[6].queue[19] useCutThroughSwitching false
+par Myned0.rte[6] typename "\"node.Node\""
+par Myned0.rte[6] address 6
+par Myned0.rte[6] netId 0
+par Myned0.rte[6] appType "\"network\""
+par Myned0.rte[6] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[6] destAddresses "\"-1\""
+par Myned0.rte[7].app typename "\"node.App\""
+par Myned0.rte[7].app address 7
+par Myned0.rte[7].app destAddresses "\"-1\""
+par Myned0.rte[7].app appType "\"network\""
+par Myned0.rte[7].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[7].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[7].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[7].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[7].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[7].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[7].routing typename "\"node.Routing\""
+par Myned0.rte[7].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[0] frameCapacity 0
+par Myned0.rte[7].queue[0] useCutThroughSwitching false
+par Myned0.rte[7].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[1] frameCapacity 0
+par Myned0.rte[7].queue[1] useCutThroughSwitching false
+par Myned0.rte[7].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[2] frameCapacity 0
+par Myned0.rte[7].queue[2] useCutThroughSwitching false
+par Myned0.rte[7].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[3] frameCapacity 0
+par Myned0.rte[7].queue[3] useCutThroughSwitching false
+par Myned0.rte[7].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[4] frameCapacity 0
+par Myned0.rte[7].queue[4] useCutThroughSwitching false
+par Myned0.rte[7].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[5] frameCapacity 0
+par Myned0.rte[7].queue[5] useCutThroughSwitching false
+par Myned0.rte[7].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[6] frameCapacity 0
+par Myned0.rte[7].queue[6] useCutThroughSwitching false
+par Myned0.rte[7].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[7] frameCapacity 0
+par Myned0.rte[7].queue[7] useCutThroughSwitching false
+par Myned0.rte[7].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[8] frameCapacity 0
+par Myned0.rte[7].queue[8] useCutThroughSwitching false
+par Myned0.rte[7].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[9] frameCapacity 0
+par Myned0.rte[7].queue[9] useCutThroughSwitching false
+par Myned0.rte[7].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[10] frameCapacity 0
+par Myned0.rte[7].queue[10] useCutThroughSwitching false
+par Myned0.rte[7].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[11] frameCapacity 0
+par Myned0.rte[7].queue[11] useCutThroughSwitching false
+par Myned0.rte[7].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[12] frameCapacity 0
+par Myned0.rte[7].queue[12] useCutThroughSwitching false
+par Myned0.rte[7].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[13] frameCapacity 0
+par Myned0.rte[7].queue[13] useCutThroughSwitching false
+par Myned0.rte[7].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[14] frameCapacity 0
+par Myned0.rte[7].queue[14] useCutThroughSwitching false
+par Myned0.rte[7].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[15] frameCapacity 0
+par Myned0.rte[7].queue[15] useCutThroughSwitching false
+par Myned0.rte[7].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[16] frameCapacity 0
+par Myned0.rte[7].queue[16] useCutThroughSwitching false
+par Myned0.rte[7].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[17] frameCapacity 0
+par Myned0.rte[7].queue[17] useCutThroughSwitching false
+par Myned0.rte[7].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[18] frameCapacity 0
+par Myned0.rte[7].queue[18] useCutThroughSwitching false
+par Myned0.rte[7].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[7].queue[19] frameCapacity 0
+par Myned0.rte[7].queue[19] useCutThroughSwitching false
+par Myned0.rte[7] typename "\"node.Node\""
+par Myned0.rte[7] address 7
+par Myned0.rte[7] netId 0
+par Myned0.rte[7] appType "\"network\""
+par Myned0.rte[7] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[7] destAddresses "\"-1\""
+par Myned0.rte[8].app typename "\"node.App\""
+par Myned0.rte[8].app address 8
+par Myned0.rte[8].app destAddresses "\"-1\""
+par Myned0.rte[8].app appType "\"external\""
+par Myned0.rte[8].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[8].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[8].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[8].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[8].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[8].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[8].routing typename "\"node.Routing\""
+par Myned0.rte[8].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[0] frameCapacity 0
+par Myned0.rte[8].queue[0] useCutThroughSwitching false
+par Myned0.rte[8].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[1] frameCapacity 0
+par Myned0.rte[8].queue[1] useCutThroughSwitching false
+par Myned0.rte[8].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[2] frameCapacity 0
+par Myned0.rte[8].queue[2] useCutThroughSwitching false
+par Myned0.rte[8].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[3] frameCapacity 0
+par Myned0.rte[8].queue[3] useCutThroughSwitching false
+par Myned0.rte[8].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[4] frameCapacity 0
+par Myned0.rte[8].queue[4] useCutThroughSwitching false
+par Myned0.rte[8].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[5] frameCapacity 0
+par Myned0.rte[8].queue[5] useCutThroughSwitching false
+par Myned0.rte[8].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[6] frameCapacity 0
+par Myned0.rte[8].queue[6] useCutThroughSwitching false
+par Myned0.rte[8].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[7] frameCapacity 0
+par Myned0.rte[8].queue[7] useCutThroughSwitching false
+par Myned0.rte[8].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[8] frameCapacity 0
+par Myned0.rte[8].queue[8] useCutThroughSwitching false
+par Myned0.rte[8].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[9] frameCapacity 0
+par Myned0.rte[8].queue[9] useCutThroughSwitching false
+par Myned0.rte[8].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[10] frameCapacity 0
+par Myned0.rte[8].queue[10] useCutThroughSwitching false
+par Myned0.rte[8].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[11] frameCapacity 0
+par Myned0.rte[8].queue[11] useCutThroughSwitching false
+par Myned0.rte[8].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[12] frameCapacity 0
+par Myned0.rte[8].queue[12] useCutThroughSwitching false
+par Myned0.rte[8].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[13] frameCapacity 0
+par Myned0.rte[8].queue[13] useCutThroughSwitching false
+par Myned0.rte[8].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[14] frameCapacity 0
+par Myned0.rte[8].queue[14] useCutThroughSwitching false
+par Myned0.rte[8].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[15] frameCapacity 0
+par Myned0.rte[8].queue[15] useCutThroughSwitching false
+par Myned0.rte[8].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[16] frameCapacity 0
+par Myned0.rte[8].queue[16] useCutThroughSwitching false
+par Myned0.rte[8].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[17] frameCapacity 0
+par Myned0.rte[8].queue[17] useCutThroughSwitching false
+par Myned0.rte[8].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[18] frameCapacity 0
+par Myned0.rte[8].queue[18] useCutThroughSwitching false
+par Myned0.rte[8].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[8].queue[19] frameCapacity 0
+par Myned0.rte[8].queue[19] useCutThroughSwitching false
+par Myned0.rte[8] typename "\"node.Node\""
+par Myned0.rte[8] address 8
+par Myned0.rte[8] netId 0
+par Myned0.rte[8] appType "\"external\""
+par Myned0.rte[8] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[8] destAddresses "\"-1\""
+par Myned0.rte[9].app typename "\"node.App\""
+par Myned0.rte[9].app address 9
+par Myned0.rte[9].app destAddresses "\"-1\""
+par Myned0.rte[9].app appType "\"external\""
+par Myned0.rte[9].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[9].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[9].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[9].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[9].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[9].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[9].routing typename "\"node.Routing\""
+par Myned0.rte[9].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[0] frameCapacity 0
+par Myned0.rte[9].queue[0] useCutThroughSwitching false
+par Myned0.rte[9].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[1] frameCapacity 0
+par Myned0.rte[9].queue[1] useCutThroughSwitching false
+par Myned0.rte[9].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[2] frameCapacity 0
+par Myned0.rte[9].queue[2] useCutThroughSwitching false
+par Myned0.rte[9].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[3] frameCapacity 0
+par Myned0.rte[9].queue[3] useCutThroughSwitching false
+par Myned0.rte[9].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[4] frameCapacity 0
+par Myned0.rte[9].queue[4] useCutThroughSwitching false
+par Myned0.rte[9].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[5] frameCapacity 0
+par Myned0.rte[9].queue[5] useCutThroughSwitching false
+par Myned0.rte[9].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[6] frameCapacity 0
+par Myned0.rte[9].queue[6] useCutThroughSwitching false
+par Myned0.rte[9].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[7] frameCapacity 0
+par Myned0.rte[9].queue[7] useCutThroughSwitching false
+par Myned0.rte[9].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[8] frameCapacity 0
+par Myned0.rte[9].queue[8] useCutThroughSwitching false
+par Myned0.rte[9].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[9] frameCapacity 0
+par Myned0.rte[9].queue[9] useCutThroughSwitching false
+par Myned0.rte[9].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[10] frameCapacity 0
+par Myned0.rte[9].queue[10] useCutThroughSwitching false
+par Myned0.rte[9].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[11] frameCapacity 0
+par Myned0.rte[9].queue[11] useCutThroughSwitching false
+par Myned0.rte[9].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[12] frameCapacity 0
+par Myned0.rte[9].queue[12] useCutThroughSwitching false
+par Myned0.rte[9].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[13] frameCapacity 0
+par Myned0.rte[9].queue[13] useCutThroughSwitching false
+par Myned0.rte[9].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[14] frameCapacity 0
+par Myned0.rte[9].queue[14] useCutThroughSwitching false
+par Myned0.rte[9].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[15] frameCapacity 0
+par Myned0.rte[9].queue[15] useCutThroughSwitching false
+par Myned0.rte[9].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[16] frameCapacity 0
+par Myned0.rte[9].queue[16] useCutThroughSwitching false
+par Myned0.rte[9].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[17] frameCapacity 0
+par Myned0.rte[9].queue[17] useCutThroughSwitching false
+par Myned0.rte[9].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[18] frameCapacity 0
+par Myned0.rte[9].queue[18] useCutThroughSwitching false
+par Myned0.rte[9].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[9].queue[19] frameCapacity 0
+par Myned0.rte[9].queue[19] useCutThroughSwitching false
+par Myned0.rte[9] typename "\"node.Node\""
+par Myned0.rte[9] address 9
+par Myned0.rte[9] netId 0
+par Myned0.rte[9] appType "\"external\""
+par Myned0.rte[9] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[9] destAddresses "\"-1\""
+par Myned0.rte[10].app typename "\"node.App\""
+par Myned0.rte[10].app address 10
+par Myned0.rte[10].app destAddresses "\"-1\""
+par Myned0.rte[10].app appType "\"external\""
+par Myned0.rte[10].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[10].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[10].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[10].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[10].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[10].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[10].routing typename "\"node.Routing\""
+par Myned0.rte[10].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[0] frameCapacity 0
+par Myned0.rte[10].queue[0] useCutThroughSwitching false
+par Myned0.rte[10].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[1] frameCapacity 0
+par Myned0.rte[10].queue[1] useCutThroughSwitching false
+par Myned0.rte[10].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[2] frameCapacity 0
+par Myned0.rte[10].queue[2] useCutThroughSwitching false
+par Myned0.rte[10].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[3] frameCapacity 0
+par Myned0.rte[10].queue[3] useCutThroughSwitching false
+par Myned0.rte[10].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[4] frameCapacity 0
+par Myned0.rte[10].queue[4] useCutThroughSwitching false
+par Myned0.rte[10].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[5] frameCapacity 0
+par Myned0.rte[10].queue[5] useCutThroughSwitching false
+par Myned0.rte[10].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[6] frameCapacity 0
+par Myned0.rte[10].queue[6] useCutThroughSwitching false
+par Myned0.rte[10].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[7] frameCapacity 0
+par Myned0.rte[10].queue[7] useCutThroughSwitching false
+par Myned0.rte[10].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[8] frameCapacity 0
+par Myned0.rte[10].queue[8] useCutThroughSwitching false
+par Myned0.rte[10].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[9] frameCapacity 0
+par Myned0.rte[10].queue[9] useCutThroughSwitching false
+par Myned0.rte[10].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[10] frameCapacity 0
+par Myned0.rte[10].queue[10] useCutThroughSwitching false
+par Myned0.rte[10].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[11] frameCapacity 0
+par Myned0.rte[10].queue[11] useCutThroughSwitching false
+par Myned0.rte[10].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[12] frameCapacity 0
+par Myned0.rte[10].queue[12] useCutThroughSwitching false
+par Myned0.rte[10].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[13] frameCapacity 0
+par Myned0.rte[10].queue[13] useCutThroughSwitching false
+par Myned0.rte[10].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[14] frameCapacity 0
+par Myned0.rte[10].queue[14] useCutThroughSwitching false
+par Myned0.rte[10].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[15] frameCapacity 0
+par Myned0.rte[10].queue[15] useCutThroughSwitching false
+par Myned0.rte[10].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[16] frameCapacity 0
+par Myned0.rte[10].queue[16] useCutThroughSwitching false
+par Myned0.rte[10].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[17] frameCapacity 0
+par Myned0.rte[10].queue[17] useCutThroughSwitching false
+par Myned0.rte[10].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[18] frameCapacity 0
+par Myned0.rte[10].queue[18] useCutThroughSwitching false
+par Myned0.rte[10].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[10].queue[19] frameCapacity 0
+par Myned0.rte[10].queue[19] useCutThroughSwitching false
+par Myned0.rte[10] typename "\"node.Node\""
+par Myned0.rte[10] address 10
+par Myned0.rte[10] netId 0
+par Myned0.rte[10] appType "\"external\""
+par Myned0.rte[10] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[10] destAddresses "\"-1\""
+par Myned0.rte[11].app typename "\"node.App\""
+par Myned0.rte[11].app address 11
+par Myned0.rte[11].app destAddresses "\"-1\""
+par Myned0.rte[11].app appType "\"external\""
+par Myned0.rte[11].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[11].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[11].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[11].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[11].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[11].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[11].routing typename "\"node.Routing\""
+par Myned0.rte[11].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[0] frameCapacity 0
+par Myned0.rte[11].queue[0] useCutThroughSwitching false
+par Myned0.rte[11].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[1] frameCapacity 0
+par Myned0.rte[11].queue[1] useCutThroughSwitching false
+par Myned0.rte[11].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[2] frameCapacity 0
+par Myned0.rte[11].queue[2] useCutThroughSwitching false
+par Myned0.rte[11].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[3] frameCapacity 0
+par Myned0.rte[11].queue[3] useCutThroughSwitching false
+par Myned0.rte[11].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[4] frameCapacity 0
+par Myned0.rte[11].queue[4] useCutThroughSwitching false
+par Myned0.rte[11].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[5] frameCapacity 0
+par Myned0.rte[11].queue[5] useCutThroughSwitching false
+par Myned0.rte[11].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[6] frameCapacity 0
+par Myned0.rte[11].queue[6] useCutThroughSwitching false
+par Myned0.rte[11].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[7] frameCapacity 0
+par Myned0.rte[11].queue[7] useCutThroughSwitching false
+par Myned0.rte[11].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[8] frameCapacity 0
+par Myned0.rte[11].queue[8] useCutThroughSwitching false
+par Myned0.rte[11].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[9] frameCapacity 0
+par Myned0.rte[11].queue[9] useCutThroughSwitching false
+par Myned0.rte[11].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[10] frameCapacity 0
+par Myned0.rte[11].queue[10] useCutThroughSwitching false
+par Myned0.rte[11].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[11] frameCapacity 0
+par Myned0.rte[11].queue[11] useCutThroughSwitching false
+par Myned0.rte[11].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[12] frameCapacity 0
+par Myned0.rte[11].queue[12] useCutThroughSwitching false
+par Myned0.rte[11].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[13] frameCapacity 0
+par Myned0.rte[11].queue[13] useCutThroughSwitching false
+par Myned0.rte[11].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[14] frameCapacity 0
+par Myned0.rte[11].queue[14] useCutThroughSwitching false
+par Myned0.rte[11].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[15] frameCapacity 0
+par Myned0.rte[11].queue[15] useCutThroughSwitching false
+par Myned0.rte[11].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[16] frameCapacity 0
+par Myned0.rte[11].queue[16] useCutThroughSwitching false
+par Myned0.rte[11].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[17] frameCapacity 0
+par Myned0.rte[11].queue[17] useCutThroughSwitching false
+par Myned0.rte[11].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[18] frameCapacity 0
+par Myned0.rte[11].queue[18] useCutThroughSwitching false
+par Myned0.rte[11].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[11].queue[19] frameCapacity 0
+par Myned0.rte[11].queue[19] useCutThroughSwitching false
+par Myned0.rte[11] typename "\"node.Node\""
+par Myned0.rte[11] address 11
+par Myned0.rte[11] netId 0
+par Myned0.rte[11] appType "\"external\""
+par Myned0.rte[11] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[11] destAddresses "\"-1\""
+par Myned0.rte[12].app typename "\"node.App\""
+par Myned0.rte[12].app address 12
+par Myned0.rte[12].app destAddresses "\"-1\""
+par Myned0.rte[12].app appType "\"external\""
+par Myned0.rte[12].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[12].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[12].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[12].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[12].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[12].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[12].routing typename "\"node.Routing\""
+par Myned0.rte[12].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[0] frameCapacity 0
+par Myned0.rte[12].queue[0] useCutThroughSwitching false
+par Myned0.rte[12].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[1] frameCapacity 0
+par Myned0.rte[12].queue[1] useCutThroughSwitching false
+par Myned0.rte[12].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[2] frameCapacity 0
+par Myned0.rte[12].queue[2] useCutThroughSwitching false
+par Myned0.rte[12].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[3] frameCapacity 0
+par Myned0.rte[12].queue[3] useCutThroughSwitching false
+par Myned0.rte[12].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[4] frameCapacity 0
+par Myned0.rte[12].queue[4] useCutThroughSwitching false
+par Myned0.rte[12].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[5] frameCapacity 0
+par Myned0.rte[12].queue[5] useCutThroughSwitching false
+par Myned0.rte[12].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[6] frameCapacity 0
+par Myned0.rte[12].queue[6] useCutThroughSwitching false
+par Myned0.rte[12].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[7] frameCapacity 0
+par Myned0.rte[12].queue[7] useCutThroughSwitching false
+par Myned0.rte[12].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[8] frameCapacity 0
+par Myned0.rte[12].queue[8] useCutThroughSwitching false
+par Myned0.rte[12].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[9] frameCapacity 0
+par Myned0.rte[12].queue[9] useCutThroughSwitching false
+par Myned0.rte[12].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[10] frameCapacity 0
+par Myned0.rte[12].queue[10] useCutThroughSwitching false
+par Myned0.rte[12].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[11] frameCapacity 0
+par Myned0.rte[12].queue[11] useCutThroughSwitching false
+par Myned0.rte[12].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[12] frameCapacity 0
+par Myned0.rte[12].queue[12] useCutThroughSwitching false
+par Myned0.rte[12].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[13] frameCapacity 0
+par Myned0.rte[12].queue[13] useCutThroughSwitching false
+par Myned0.rte[12].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[14] frameCapacity 0
+par Myned0.rte[12].queue[14] useCutThroughSwitching false
+par Myned0.rte[12].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[15] frameCapacity 0
+par Myned0.rte[12].queue[15] useCutThroughSwitching false
+par Myned0.rte[12].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[16] frameCapacity 0
+par Myned0.rte[12].queue[16] useCutThroughSwitching false
+par Myned0.rte[12].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[17] frameCapacity 0
+par Myned0.rte[12].queue[17] useCutThroughSwitching false
+par Myned0.rte[12].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[18] frameCapacity 0
+par Myned0.rte[12].queue[18] useCutThroughSwitching false
+par Myned0.rte[12].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[12].queue[19] frameCapacity 0
+par Myned0.rte[12].queue[19] useCutThroughSwitching false
+par Myned0.rte[12] typename "\"node.Node\""
+par Myned0.rte[12] address 12
+par Myned0.rte[12] netId 0
+par Myned0.rte[12] appType "\"external\""
+par Myned0.rte[12] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[12] destAddresses "\"-1\""
+par Myned0.rte[13].app typename "\"node.App\""
+par Myned0.rte[13].app address 13
+par Myned0.rte[13].app destAddresses "\"-1\""
+par Myned0.rte[13].app appType "\"external\""
+par Myned0.rte[13].app sendIaTime exponential(5s)
+attr unit s
+par Myned0.rte[13].app packetLength 4096byte
+attr unit byte
+scalar Myned0.rte[13].app endToEndJitter:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end jitter of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[13].app endToEndJitter:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end jitter of arrived packets, max"
+attr unit s
+scalar Myned0.rte[13].app endToEndDelay:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived packets, mean"
+attr unit s
+scalar Myned0.rte[13].app endToEndDelay:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "end-to-end delay of arrived packets, max"
+attr unit s
+par Myned0.rte[13].routing typename "\"node.Routing\""
+par Myned0.rte[13].queue[0] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[0] frameCapacity 0
+par Myned0.rte[13].queue[0] useCutThroughSwitching false
+par Myned0.rte[13].queue[1] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[1] frameCapacity 0
+par Myned0.rte[13].queue[1] useCutThroughSwitching false
+par Myned0.rte[13].queue[2] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[2] frameCapacity 0
+par Myned0.rte[13].queue[2] useCutThroughSwitching false
+par Myned0.rte[13].queue[3] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[3] frameCapacity 0
+par Myned0.rte[13].queue[3] useCutThroughSwitching false
+par Myned0.rte[13].queue[4] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[4] frameCapacity 0
+par Myned0.rte[13].queue[4] useCutThroughSwitching false
+par Myned0.rte[13].queue[5] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[5] frameCapacity 0
+par Myned0.rte[13].queue[5] useCutThroughSwitching false
+par Myned0.rte[13].queue[6] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[6] frameCapacity 0
+par Myned0.rte[13].queue[6] useCutThroughSwitching false
+par Myned0.rte[13].queue[7] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[7] frameCapacity 0
+par Myned0.rte[13].queue[7] useCutThroughSwitching false
+par Myned0.rte[13].queue[8] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[8] frameCapacity 0
+par Myned0.rte[13].queue[8] useCutThroughSwitching false
+par Myned0.rte[13].queue[9] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[9] frameCapacity 0
+par Myned0.rte[13].queue[9] useCutThroughSwitching false
+par Myned0.rte[13].queue[10] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[10] frameCapacity 0
+par Myned0.rte[13].queue[10] useCutThroughSwitching false
+par Myned0.rte[13].queue[11] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[11] frameCapacity 0
+par Myned0.rte[13].queue[11] useCutThroughSwitching false
+par Myned0.rte[13].queue[12] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[12] frameCapacity 0
+par Myned0.rte[13].queue[12] useCutThroughSwitching false
+par Myned0.rte[13].queue[13] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[13] frameCapacity 0
+par Myned0.rte[13].queue[13] useCutThroughSwitching false
+par Myned0.rte[13].queue[14] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[14] frameCapacity 0
+par Myned0.rte[13].queue[14] useCutThroughSwitching false
+par Myned0.rte[13].queue[15] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[15] frameCapacity 0
+par Myned0.rte[13].queue[15] useCutThroughSwitching false
+par Myned0.rte[13].queue[16] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[16] frameCapacity 0
+par Myned0.rte[13].queue[16] useCutThroughSwitching false
+par Myned0.rte[13].queue[17] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[17] frameCapacity 0
+par Myned0.rte[13].queue[17] useCutThroughSwitching false
+par Myned0.rte[13].queue[18] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[18] frameCapacity 0
+par Myned0.rte[13].queue[18] useCutThroughSwitching false
+par Myned0.rte[13].queue[19] typename "\"node.L2Queue\""
+par Myned0.rte[13].queue[19] frameCapacity 0
+par Myned0.rte[13].queue[19] useCutThroughSwitching false
+par Myned0.rte[13] typename "\"node.Node\""
+par Myned0.rte[13] address 13
+par Myned0.rte[13] netId 0
+par Myned0.rte[13] appType "\"external\""
+par Myned0.rte[13] routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0.rte[13] destAddresses "\"-1\""
+par Myned0 typename "\"networks.Myned0\""
+par Myned0 routingTableString "\"-1 -1 -1 -1 -1 1 2 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 4 3 3 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 3 4 5 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\\n-1 -1 -1 -1 -1 -1 -1 2 -1 -1 -1 -1 -1 -1\""
+par Myned0 netId 0
+

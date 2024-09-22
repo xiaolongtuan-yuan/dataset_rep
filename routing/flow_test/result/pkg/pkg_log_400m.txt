@@ -1,0 +1,19 @@
+src: 0, dst: 3, sendPkgCount: 485
+src: 1, dst: 2, sendPkgCount: 514
+src: 5, dst: 2, avgDelay: 2537.82, avgJitter: 542.988, pkgReceiveCount: 7, sunDelay: 17764.7, sunJitter: 3800.91
+src: 2, dst: 9, sendPkgCount: 511
+src: 3, dst: 12, sendPkgCount: 505
+src: 4, dst: 9, sendPkgCount: 519
+src: 5, dst: 2, sendPkgCount: 483
+src: 11, dst: 6, avgDelay: 3206.67, avgJitter: 0, pkgReceiveCount: 1, sunDelay: 3206.67, sunJitter: 0
+src: 6, dst: 4, sendPkgCount: 500
+src: 7, dst: 5, sendPkgCount: 507
+src: 8, dst: 2, sendPkgCount: 498
+src: 9, dst: 10, sendPkgCount: 500
+src: 10, dst: 5, sendPkgCount: 464
+src: 11, dst: 6, sendPkgCount: 557
+src: 3, dst: 12, avgDelay: 2360.01, avgJitter: 232.597, pkgReceiveCount: 19, sunDelay: 44840.3, sunJitter: 4419.35
+src: 12, dst: 5, sendPkgCount: 495
+src: 14, dst: 13, avgDelay: 3200.02, avgJitter: 0, pkgReceiveCount: 1, sunDelay: 3200.02, sunJitter: 0
+src: 13, dst: 7, sendPkgCount: 544
+src: 14, dst: 13, sendPkgCount: 503
